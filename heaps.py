@@ -4,7 +4,7 @@ def getParentKey(i):
 	return math.floor((i-1)/2)
 
 def getRightKey(i):
-	return 2*(i+1)
+	return 2*i+2
 
 def getLeftKey(i):
 	return 2*i + 1
@@ -69,9 +69,9 @@ def heapSort(A):
 		A[1] = curr
 		maxHeapify(A,1)
 
-	return A
+	return A	
 
-print(heapSort(arr6))
+# print(heapSort(arr6))
 
 
 
@@ -81,9 +81,9 @@ print(heapSort(arr6))
 # print(isMaxHeap(arr2))
 # print(isMaxHeap(arr3))
 
-# print(getRightKey(0), 'should be 2')
-# print(getRightKey(3), 'should be 8')
+print(getRightKey(0), 'should be 2')
+print(getRightKey(3), 'should be 8')
 
-# print(getLeftKey(0), 'should be 1')
-# print(getLeftKey(3), 'should be 7')
+print(getLeftKey(0), 'should be 1')
+print(getLeftKey(3), 'should be 7')
 
