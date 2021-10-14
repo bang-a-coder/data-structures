@@ -16,9 +16,9 @@ def isMaxHeap(arr):
 	
 	return True
 
-sample = [10,6,7,5,15,17,12]
+sample = [10,6,7,5,15,17,12] #xomplete tree
 sample2 = [7,6,10]
-sample3 = [7,6,10,5,15,17,12]
+sample3 = [10,6,7,5,15,17,12,6,3,16] #incomplete tree
 
 
 def maxHeapify(arr, i): #maintain max heap property
@@ -52,8 +52,8 @@ def buildMaxHeap(arr):
 		maxHeapify(arr,i)
 
 	
-buildMaxHeap(sample)
-print(sample)
+buildMaxHeap(sample3)
+print(sample3, isMaxHeap(sample3))
 		
 		
 
