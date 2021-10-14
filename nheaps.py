@@ -44,8 +44,16 @@ def maxHeapify(arr, i): #maintain max heap property
 		maxHeapify(arr, larger)
 
 
-maxHeapify(sample3,0)
-print(sample3)
+# maxHeapify(sample3,0)
+# print(sample3)
+
+def buildMaxHeap(arr):
+	for i in range(math.floor(len(arr)/2), -1, -1):
+		maxHeapify(arr,i)
+
+	
+buildMaxHeap(sample)
+print(sample)
 		
 		
 
